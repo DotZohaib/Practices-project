@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text1">0</h1>
+    <h1 id="text">I Am Authenticate on ZenZone - world wide web</h1>
+    <button id="btn">Check</button>
+    <script>
+        
+// const arrowFunc = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const success = true;
+//             if (success) {
+//                 resolve("Operation completed successfully!");
+//             } else {
+//                 reject("Operation failed!");
+//             }
+//         }, 2000);
+//     });
+// };
+
+// const func = async () => {
+//     let value = await new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let success = true;
+//             if (success) {
+//                 resolve("Operation completed successfully!");
+//             } else {
+//                 reject("Operation failed!");
+//             }
+//         }, 2000);
+//     });
+//     console.log(value);
+// }
+
+
+   function mainFunc() {
+    try {
+        console.log("I am Try");
+        
+    } catch (error) {
+        console.log("I am Catch")
+    }
+    finally{
+        console.log("I am Finally")
+    }
+   }
+    mainFunc();
+
+
+
+
+     document.getElementById("btn").addEventListener("click", function(){
+        let text = parseInt(document.getElementById("text1").innerHTML)
+        document.getElementById("text1").innerHTML = text + 1;
+     })
+
+     document.getElementById("btn").addEventListener("click", function(){
+        let success = false;
+        if (success == true){
+            document.getElementById("text").innerHTML = "Success: "+ success;
+        }
+        else{
+            document.getElementById("text").innerHTML = "Error: " + success
+        }
+     })
+    </script>
+</body>
+</html>

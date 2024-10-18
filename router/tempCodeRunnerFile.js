@@ -1,0 +1,1 @@
+${sentence.includes(word)? "is" 

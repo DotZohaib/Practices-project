@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #text {
+        font-size: 32px;
+    }
+
+    #btn {
+        font-size: 22px;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 11px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h1 id="hy">Hy, WelCome to ZenZone </h1>
+    <div id="center">
+        <p id="text">0</p>
+        <button id="btn">Click</button>
+    </div>
+
+   
+    
+
+    <script>
+        // document.getElementById("btn").addEventListener("click", function () {
+        //   let value = parseInt ( document.getElementById("text").innerHTML)
+        //   document.getElementById("text").innerHTML = value + 1;
+        // })
+
+        // document.body.style.backgroundColor = "red"
+        // document.getElementById("btn").addEventListener("click", function(){
+        //     location.href = "http://google.com/search?q"
+        // })
+
+        document.getElementById("btn").addEventListener("click", function () {
+            let search = parseInt(document.getElementById("text").innerHTML)
+            document.getElementById("text").innerHTML = search + 1;
+        });
+
+        console.log(document.body.firstChild);
+
+        document.getElementById("btn").addEventListener("click", function () {
+            document.getElementById("hy").innerHTML = "Thank You for Click Search"
+        })
+
+    </script>
+</body>
+
+</html>

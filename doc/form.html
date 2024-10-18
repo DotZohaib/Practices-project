@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenZone E Commerce Store World wide web</title>
+</head>
+<body>
+    <h1 id="hello">Welcome to ZenZone - Zohaib Ali IT Expert - AI Expert</h1>
+    <button id="btn">Submit</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("hello").innerHTML = "How Are You";
+            
+            setTimeout(() => {
+                document.getElementById("hello").innerHTML = "wait...";
+            }, 2000); // 2 seconds delay
+
+            setTimeout(() => {
+                document.getElementById("hello").innerHTML = "process...";
+            }, 4000); // 4 seconds delay
+
+            setTimeout(() => {
+                document.getElementById("hello").innerHTML = "done...";
+            }, 6000); // 6 seconds delay
+
+            setTimeout(() => {
+                document.getElementById("hello").innerHTML = "Thank You";
+            }, 8000); // 8 seconds delay
+        });
+
+
+
+        // document.getElementById("btn").addEventListener("click", function() {
+        //     const messages = ["How Are You", "wait...", "process...", "done...", "Thank You"];
+        //     let index = 0;
+        //     const interval = setInterval(() => {
+        //         document.getElementById("hello").innerHTML = messages[index];
+        //         index++;
+
+        //         // Stop the interval when all messages are displayed
+        //         if (index === messages.length) {
+        //             clearInterval(interval);
+        //         }
+        //     }, 2000); // Change message every 2 seconds
+        // });
+    </script>
+</body>
+</html>

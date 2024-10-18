@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zohaib Ali - Full Stack Dev - AI ChatBot</title>
+</head>
+
+<style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100vw;
+      height: 100vh;
+    }
+    nav{
+        background-color: bisque;
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 8px 12px;
+    }
+    nav input{
+        padding: 8px 12px;
+        border-radius: 11px;
+    }
+    nav ul{
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 22px;
+        list-style: none;
+    }
+    nav ul li a{
+        text-decoration: none;
+    }
+</style>
+<body>
+
+    <header>
+        <nav>
+            <h2>ZenZone</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <input type="search" name="search" id="search" placeholder="Search">
+        </nav>
+    </header>
+
+
+    <h1>Welcome to ZenZone</h1>
+    <button id="btn" type="submit">Submit</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("hello").innerHTML = "How Are You";
+        });
+
+        let e = function(x){
+            console.log(x.target);
+            console.log(x.type, x.clientX, x.clientY);
+
+            
+        }
+    </script>
+    
+</body>
+</html>
